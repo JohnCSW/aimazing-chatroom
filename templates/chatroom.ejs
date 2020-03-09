@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include('metadata') %>
+        <link rel='stylesheet' type='text/css' href='/chatroom.css'>
+        <script type='text/javascript' defer src='https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js'></script>
+        <script type='text/javascript' defer src='/chatroom.js'></script>
+    </head>
+    <body>
+        <nav>
+            <h3>Live Chat</h3>
+            <form action='/api/auth/logout' method='POST'>
+                <input type='submit' value='Log Out'>
+            </form>
+        </nav>
+        <section id='msg-container'>
+            Container
+        </section>
+        <form id='msg-composer'>
+            <input type='text' placeholder='Enter messages here' required>
+            <input type='submit' value='Send'>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+nav
+{
+    height: 10vh;
+    display: grid;
+    grid-template-columns: repeat(1fr, 4);
+    align-items: center;
+    
+}
+nav > *
+{
+    margin: 0;
+}
+nav > h3
+{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    justify-self: center;
+    color: orange;
+}
+nav > form
+{
+    grid-column: 4/5;
+    justify-self: end;
+}
+nav > form > input
+{
+    height: 25px;
+    width: 75px;
+    border-radius: 2px;
+    font-size: 0.9em;
+    font-weight: bold;
+    background-color: orange;
+    color: white;
+    border: none;
+}
+#msg-container 
+{ 
+    margin: 10px 0; 
+    height: 70vh;
+    background-color: lightgrey;
+    border-radius: 2px;
+}
+#msg-composer 
+{
+    height: 6vh;
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+}
+#msg-composer > input[type='submit']
+{
+    font-size: 0.9em;
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+} 

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include('metadata') %>
+        <link rel='stylesheet' type='text/css' href='/index.css'>
+        <style>
+            body { color: orange; }
+            #error-msg { color: red; }
+        </style>
+    </head>
+    <body>
+        <section name='auth' id='auth'>
+            <form action='/api/auth/signup' method='POST'>
+                <h4>Don't have an account? Register Here!</h4>
+                <label>Email: <input type='email' required placeholder='Emal' name="acc"></label>
+                <label>Password: <input type='password' required placeholder='Password' name="pwd"></label>
+                <input type='submit' value='Send'>
+            </form>
+            <form action='/api/auth/login' method='POST'>
+                <h4>Already have an account? Log In</h4>
+                <label>Email: <input type='email' required placeholder='Emal' name="acc"></label>
+                <label>Password: <input type='password' required placeholder='Password' name="pwd"></label>
+                <input type='submit' value='Log In'>
+            </form>
+        </section>
+        <h5 id='error-msg'></h5>
+    </body>
+</html>
